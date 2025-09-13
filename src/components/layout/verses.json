@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_layout_verses_s",
+  "info": {
+    "displayName": "verses "
+  },
+  "options": {},
+  "attributes": {
+    "index_number": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 0
+    },
+    "arabic_text": {
+      "type": "string",
+      "required": true
+    },
+    "turkish_text": {
+      "type": "string",
+      "required": true
+    },
+    "deep_notes": {
+      "type": "component",
+      "component": "layer.deepnote",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

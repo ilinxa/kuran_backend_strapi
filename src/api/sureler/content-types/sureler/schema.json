@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surelers",
+  "info": {
+    "singularName": "sureler",
+    "pluralName": "surelers",
+    "displayName": "Surah"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "index_number": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 1
+    },
+    "name_arabic": {
+      "type": "string",
+      "required": true
+    },
+    "name_turkish": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "required": true,
+      "default": "Mekki",
+      "enum": [
+        "Mekki",
+        "Medeni"
+      ]
+    },
+    "order_of_revelation": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "verse_count": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "verses": {
+      "type": "component",
+      "component": "layout.verses",
+      "repeatable": true
+    }
+  }
+}

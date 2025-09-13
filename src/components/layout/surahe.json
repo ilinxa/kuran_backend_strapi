@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_layout_surahes",
+  "info": {
+    "displayName": "surah"
+  },
+  "options": {},
+  "attributes": {
+    "index_number": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "unique": true,
+      "min": 1
+    },
+    "name_arabic": {
+      "type": "string",
+      "required": true
+    },
+    "name_turkish": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Mekki",
+        "Medeni"
+      ]
+    },
+    "order_of_revelation": {
+      "type": "integer"
+    },
+    "verse_count": {
+      "type": "integer"
+    },
+    "verses": {
+      "type": "component",
+      "component": "layout.verses",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

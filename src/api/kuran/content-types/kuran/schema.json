@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "kurans",
+  "info": {
+    "singularName": "kuran",
+    "pluralName": "kurans",
+    "displayName": "kuran"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "surehs": {
+      "type": "component",
+      "component": "layout.surahe",
+      "repeatable": true,
+      "required": true
+    }
+  }
+}

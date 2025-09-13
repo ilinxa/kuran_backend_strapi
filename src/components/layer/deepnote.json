@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_layer_deepnotes",
+  "info": {
+    "displayName": "deepnote"
+  },
+  "options": {},
+  "attributes": {
+    "index_number": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 0
+    },
+    "key_word": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text",
+      "required": true,
+      "unique": false
+    }
+  },
+  "config": {}
+}
